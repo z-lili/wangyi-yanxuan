@@ -1,0 +1,91 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// 这个代表每个页面的配置
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	    ,{
+            "path" : "pages/category/category",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "分类",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/goodsDetail/goodsDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	// 全局样式
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "网易严选",
+		"navigationBarBackgroundColor": "#BB2C08",
+		"backgroundColor": "#F8F8F8"
+	},
+	// tabbar配置
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#BB2C08",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/images/tabBar/tab-home.png",
+			"selectedIconPath": "static/images/tabBar/tab-home-current.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/category/category",
+			"iconPath": "static/images/tabBar/tab-cate.png",
+			"selectedIconPath": "static/images/tabBar/tab-cate-current.png",
+			"text": "分类"
+		},{
+			"pagePath": "pages/cart/cart",
+			"iconPath": "static/images/tabBar/tab-cart.png",
+			"selectedIconPath": "static/images/tabBar/tab-cart-current.png",
+			"text": "购物车"
+		},{
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/images/tabBar/tab-my.png",
+			"selectedIconPath": "static/images/tabBar/tab-my-current.png",
+			"text": "个人中心"
+		}]
+	},
+	"uniIdRouter": {}
+}
